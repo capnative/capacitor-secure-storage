@@ -55,5 +55,8 @@
       "src": "android"
     }
   },
-  "type": "module"
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  }
 }
