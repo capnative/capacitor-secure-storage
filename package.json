@@ -1,0 +1,59 @@
+{
+  "name": "capacitor-secure-storage",
+  "version": "0.1.0",
+  "description": "Secure key-value storage for Capacitor using iOS Keychain and Android Keystore (AES-GCM).",
+  "main": "dist/esm/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "files": [
+    "android/src/main/",
+    "android/build.gradle",
+    "dist/",
+    "ios/Sources",
+    "ios/Tests",
+    "Package.swift",
+    "CapacitorSecureStorage.podspec"
+  ],
+  "author": "marioshtika",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marioshtika/capacitor-secure-storage.git"
+  },
+  "keywords": [
+    "capacitor",
+    "plugin",
+    "native",
+    "secure-storage",
+    "keychain",
+    "keystore"
+  ],
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rm -rf dist",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.test.json",
+    "verify:ios": "swift build && swift test",
+    "verify:android": "cd android && gradle clean build test",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/ios": "^8.0.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.0.0"
+  },
+  "peerDependencies": {
+    "@capacitor/core": ">=8.0.0"
+  },
+  "capacitor": {
+    "ios": {
+      "src": "ios"
+    },
+    "android": {
+      "src": "android"
+    }
+  },
+  "type": "module"
+}
