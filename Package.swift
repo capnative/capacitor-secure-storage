@@ -2,11 +2,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "CapacitorSecureStorage",
+    name: "CapnativeCapacitorSecureStorage",
     platforms: [.iOS(.v15)],
     products: [
         .library(
-            name: "CapacitorSecureStorage",
+            name: "CapnativeCapacitorSecureStorage",
             targets: ["SecureStoragePlugin"])
     ],
     dependencies: [
