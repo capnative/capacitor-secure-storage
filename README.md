@@ -19,14 +19,14 @@ A Capacitor plugin for storing string key-value data securely using the **iOS Ke
 ## Install
 
 ```bash
-npm install @marioshtika/capacitor-secure-storage
+npm install @capnative/capacitor-secure-storage
 npx cap sync
 ```
 
 ## Basic usage
 
 ```typescript
-import { SecureStorage } from '@marioshtika/capacitor-secure-storage';
+import { SecureStorage } from '@capnative/capacitor-secure-storage';
 
 await SecureStorage.set({ 
     key: 'access_token', 
