@@ -1,5 +1,5 @@
 {
-  "name": "@marioshtika/capacitor-secure-storage",
+  "name": "@capnative/capacitor-secure-storage",
   "version": "8.0.0",
   "description": "Secure key-value storage for Capacitor using iOS Keychain and Android Keystore (AES-GCM).",
   "main": "dist/esm/index.js",
