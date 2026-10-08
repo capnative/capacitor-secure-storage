@@ -18,7 +18,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marioshtika/capacitor-secure-storage.git"
+    "url": "git+https://github.com/capnative/capacitor-secure-storage.git"
   },
   "keywords": [
     "capacitor",
